@@ -10,24 +10,24 @@
                 }
             }else if($tipo == "odd"){
                 if($n % 2 !=0 ){
-                    $result[] = $num;
+                    $result[] = $n;
                 }
             }else if($tipo == "prime"){
                 if(primo($n)){
-                    $result[]=$num;
+                    $result[]=$n;
                 }
             }else if($tipo == "positive"){
                 if($n>0){
-                    $result[]=$num;
+                    $result[]=$n;
                 }
             }else if($tipo == "negative"){
                 if($n<0){
-                    $result[]=$num;
+                    $result[]=$n;
                 }
             }
         }
         return $result;
-        var_dump(filterByType($num,"positivo"));
+        
     }
     
 
@@ -43,8 +43,8 @@
         }
         return true;
     }
-    
-
+    $num=[7,12,-3,4,5,-12];
+    var_dump(filterByType($num,"positive"));
 
 
 ?>
